@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A special birthday surprise made for Beselote.">
+
+    <title>Happy Birthday Beselote! 🎀</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="site-nav" aria-label="Main navigation">
+
+        <a href="#home" class="nav-logo">
+            B<span>.</span> 🎀
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#birthday-quiz">Quiz</a>
+            <a href="#memories">Memories</a>
+            <a href="#birthday-letter">Letter</a>
+            <a href="#birthday-cake">Cake</a>
+            <a href="#final-surprise">Surprise</a>
+        </div>
+
+    </nav>
+
+
+    <main id="app">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    ✨ TEKEMT 24 • A SPECIAL DAY
+                </span>
+
+                <h1>
+                    Hey, <span>Beselote!</span> 🎀
+                </h1>
+
+                <p class="hero-description">
+                    Someone told me today is your birthday...
+                    So I did something a little crazy. 😂
+                </p>
+
+                <button class="surprise-btn" id="start-btn" type="button">
+                    Open Your Surprise 🎁
+                </button>
+
+                <p class="hero-footer">
+                    Made with ❤️, laughs & a little bit of madness.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2. BIRTHDAY QUIZ -->
+        <section class="quiz-section" id="birthday-quiz">
+
+            <div class="quiz-container">
+
+                <span class="quiz-tag">
+                    😂 THE OFFICIAL BIRTHDAY TEST
+                </span>
+
+                <h2>Let's Test You, Beselote!</h2>
+
+                <p class="quiz-description">
+                    Three questions. Zero pressure.
+                    Okay, maybe a little pressure. 😭
+                </p>
+
+                <div class="quiz-card">
+
+                    <p class="quiz-progress" id="quiz-progress">
+                        QUESTION 1 OF 3
+                    </p>
+
+                    <h3 id="quiz-question">
+                        Who is the birthday queen today? 👑
+                    </h3>
+
+                    <div class="quiz-options" id="quiz-options">
+
+                        <button class="quiz-option" type="button">
+                            Obviously ME! 😌
+                        </button>
+
+                        <button class="quiz-option" type="button">
+                            Let me ask Google 😂
+                        </button>
+
+                    </div>
+
+                    <p id="quiz-feedback" aria-live="polite"></p>
+
+                    <button class="quiz-next" id="quiz-next" type="button" hidden>
+                        Next Question →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3. PHOTO GALLERY -->
+        <section class="gallery-section" id="memories">
+
+            <div class="gallery-container">
+
+                <span class="gallery-tag">
+                    📸 OUR LITTLE MEMORY BOX
+                </span>
+
+                <h2>A Little Collection of You</h2>
+
+                <p class="gallery-description">
+                    Warning: Too much cuteness in one place.
+                    Viewer discretion is advised. 😂❤️
+                </p>
+
+                <div class="gallery-grid">
+
+                    <!-- PHOTO 1 -->
+                    <div class="photo-card">
+
+                        <div class="polaroid">
+
+                            <img
+                                src="assets/images/birthday-girl.jpg"
+                                alt="Beselote's birthday photo"
+                                loading="lazy"
+                            >
+
+                            <p>Our Birthday Star ✨</p>
+
+                        </div>
+
+                        <span class="photo-caption">
+                            Main character energy 😂
+                        </span>
+
+                    </div>
+
+                    <!-- PHOTO 2 -->
+                    <div class="photo-card">
+
+                        <div class="polaroid">
+
+                            <img
+                                src="assets/images/memory-1.jpg"
+                                alt="A special memory"
+                                loading="lazy"
+                            >
+
+                            <p>Birthday Girlll 💗</p>
+
+                        </div>
+
+                        <span class="photo-caption">
+                            Certified troublemaker 😭
+                        </span>
+
+                    </div>
+
+                    <!-- PHOTO 3 -->
+                    <div class="photo-card">
+
+                        <div class="polaroid">
+
+                            <img
+                                src="assets/images/memory-2.jpg"
+                                alt="Another special memory"
+                                loading="lazy"
+                            >
+
+                            <p>Forever a good memory 🎀</p>
+
+                        </div>
+
+                        <span class="photo-caption">
+                            No explanation needed 😂
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4. SECRET BIRTHDAY LETTER -->
+        <section class="letter-section" id="birthday-letter">
+
+            <div class="letter-container">
+
+                <span class="letter-tag">
+                    💌 A LITTLE MESSAGE FOR YOU
+                </span>
+
+                <h2>Something I Want You to Know</h2>
+
+                <p class="letter-description">
+                    No jokes for a moment.
+                    This one comes straight from the heart. ❤️
+                </p>
+
+                <div class="letter-envelope">
+
+                    <div class="envelope-icon">💌</div>
+
+                    <h3>Dear Beselote,</h3>
+
+                    <p>
+                        You have a special place in my life,
+                        and I'm genuinely grateful for all the
+                        laughs, memories and crazy moments.
+                    </p>
+
+                    <p>
+                        I couldn't wrap this gift in a box,
+                        so I decided to create something with
+                        my own hands, just for you.
+                    </p>
+
+                    <p>
+                        Keep smiling, keep being yourself,
+                        and never forget how special you are.
+                    </p>
+
+                    <p class="letter-ending">
+                        Happy Birthday, Beselote! 🎂❤️
+                        <br>
+                        — Your friend, Eyosi
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5. VIRTUAL BIRTHDAY CAKE -->
+        <section class="cake-section" id="birthday-cake">
+
+            <div class="cake-container">
+
+                <span class="cake-tag">
+                    🎂 THE BIG BIRTHDAY MOMENT
+                </span>
+
+                <h2>Make a Wish, Beselote! ✨</h2>
+
+                <p class="cake-description">
+                    Close your eyes, make a wish and get ready
+                    for your birthday magic! 🥹
+                </p>
+
+                <div class="cake-scene">
+
+                    <div class="candles">
+
+                        <div class="candle">
+                            <span class="flame"></span>
+                            <div class="candle-stick"></div>
+                        </div>
+
+                        <div class="candle">
+                            <span class="flame"></span>
+                            <div class="candle-stick"></div>
+                        </div>
+
+                        <div class="candle">
+                            <span class="flame"></span>
+                            <div class="candle-stick"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="cake-top"></div>
+                    <div class="cake-middle"></div>
+                    <div class="cake-bottom"></div>
+                    <div class="cake-plate"></div>
+
+                </div>
+
+                <button class="blow-btn" id="blow-candles" type="button">
+                    Make a Wish & Blow! 🕯️
+                </button>
+
+                <p class="cake-message" id="cake-message" aria-live="polite">
+                    Your birthday magic is waiting... 💗
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6. FINAL SURPRISE -->
+        <section class="final-section" id="final-surprise">
+
+            <div class="final-container">
+
+                <span class="final-tag">
+                    🎀 ONE LAST THING...
+                </span>
+
+                <h2>Wait, Beselote! 🥹</h2>
+
+                <p class="final-description">
+                    You didn't think that was everything,
+                    did you? 😂
+                </p>
+
+                <div class="final-card">
+
+                    <div class="final-icon">🎁</div>
+
+                    <h3>Your Last Surprise Is Waiting!</h3>
+
+                    <p>
+                        I have one more little message
+                        prepared especially for you.
+                    </p>
+
+                    <button
+                        class="final-btn"
+                        id="final-surprise-btn"
+                        type="button"
+                    >
+                        Reveal My Last Surprise ❤️
+                    </button>
+
+                    <div
+                        class="final-message"
+                        id="final-message"
+                        hidden
+                    >
+
+                        <h3>YOU ARE ONE OF A KIND! 💗</h3>
+
+                        <p>
+                            Happy Birthday, Beselote!
+                            Thank you for being part of my beautiful memories.
+                            Never stop smiling, laughing and being YOU.
+                        </p>
+
+                        <p>
+                            This website is small, but the effort and
+                            appreciation behind it are real. ❤️
+                        </p>
+
+                        <h3>WITH LOVE, EYOSI! 🎀</h3>
+
+                    </div>
+
+                </div>
+
+                <p class="final-footer">
+                    Made especially for Beselote • Tekemt 24 🎂
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- 7. WEBSITE FOOTER -->
+    <footer class="birthday-footer">
+
+        <div class="footer-content">
+
+            <a href="#home" class="footer-logo">
+                B<span>.</span> 🎀
+            </a>
+
+            <p>
+                Made with love, laughter and lots of memories.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#memories">Memories</a>
+                <a href="#birthday-letter">Birthday Letter</a>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <p class="footer-credit">
+                © 2026 Birthday Surprise for Beselote.
+                <br>
+                Created by Eyosi ❤️
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
